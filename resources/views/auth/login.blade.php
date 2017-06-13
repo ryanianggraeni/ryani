@@ -8,7 +8,7 @@
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
                   
-                   {!! Form::open(['url'=>'login', 'class'=>'from-horizontal'])!!}
+                   {!! Form::open(['url'=>'login', 'class'=>'form-horizontal'])!!}
 
                    <div class="form-group{{$errors->has('email')? ' has-error' : ''}}">
                        {!! Form::label('email','Alamat Email', ['class'=>'col-md-4 control-label'])!!}
@@ -37,9 +37,11 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-6 col-md-offset-4">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-btn fa-sign-in"></i> Login
+                    <button type="submit" class="btn btn-danger btn-block">
+                        <span class="glyphicon glyphicon-check"></span><i class="fa fa-btn fa-sign-in"></i> Login
                     </button>
+
+                    
 
                     <a class="btn btn-link" href="{{ url('/password/reset')}}">Lupa password</a>
                         

@@ -14,12 +14,12 @@
                         </div>
                     @endif
 
-                  {!! Form::open(['url'=>'/password/email', 'class'=>'from-horizontal'])!!}
+                  {!! Form::open(['url'=>'/password/email', 'class'=>'form-horizontal'])!!}
 
                   <div class="from-group{{ $errors->has('email')? 'has-error': ''}}">
                       {!! Form::label('email','alamat email', ['class'=>'col-md-4 control-label'])!!}
                       <div class="col-md-6">
-                          {!! Form::email('email',null,['class'=>'from-control'])!!}
+                          {!! Form::email('email',null,['class'=>'form-control'])!!}
                           {!! $errors->first('email','<p class="help-block">:message</p>')!!}
                       </div>
                   </div>
